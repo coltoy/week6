@@ -9,22 +9,26 @@
     <p>User logged in as {{ @username }} using {{ @password }}</p>
     <p>I like {{ @color }}</p>
     <p>Circumference: {{ (2 * 3.141592654 * @radius) }}</p>
-    <p>Fruits:</p>
+
+    <h3>Fruits</h3>
     <ul>
         <repeat group="{{ @fruits }}" value="{{ @fruit }}">
             <li>{{ trim(@fruit) }}</li>
         </repeat>
     </ul>
+
     <h3>Bookmarks</h3>
     <ul>
         <repeat group="{{ @bookmarks }}" value="{{ @bookmark }}">
             <li><a href="{{ @bookmark }}">{{ str_replace('https://', '', @bookmark) }}</a></li>
         </repeat>
     </ul>
+
     <h3>Dessert Options</h3>
     <repeat group="{{ @desserts }}" key="{{ @key }}" value="{{ @value }}">
         <input type="checkbox" value="{{ @key }}">{{ @value }}</input>
     </repeat>
+
     <h3>Color Options</h3>
     <repeat group="{{ @colors }}" value="{{ @color }}">
         <label><input type="radio" name="colors" value="{{ @color }}">&nbsp{{ @color }}</label><br>
