@@ -1,0 +1,14 @@
+{
+  "name": "cmartygr/328/week6",
+  "description": "Week 6 project",
+  "license": "open source",
+  "authors": [
+    {
+      "name": "Colton Marty",
+      "email": "cmartydev@gmail.com"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}

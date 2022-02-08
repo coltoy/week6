@@ -1,0 +1,5 @@
+# Ignore these files when pushing to repo with Git
+
+.git/
+vendor/
+composer.lock
